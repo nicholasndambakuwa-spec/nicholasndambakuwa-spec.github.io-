@@ -64,3 +64,18 @@ form input, form textarea {
     margin: 10px 0;
     padding: 10px;
 }
+/* This makes all project images fit their boxes */
+.card img {
+    width: 100%;
+    height: 200px; /* You can change this height to whatever looks best */
+    object-fit: cover; /* This crops the image to fill the space without stretching */
+    border-radius: 8px;
+}
+
+/* This organizes the projects into a neat row/grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
